@@ -4,242 +4,278 @@ export class Navbar extends Component {
     render() {
         return (
           <div>
-                           <style dangerouslySetInnerHTML={{__html: "\n  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');\n\n  .font-mont{\n      font-family: 'Montserrat', sans-serif;\n  }\n  " }} />
-        <section className="w-full px-3 antialiased lg:px-6 font-mont" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1614588359734-b438b290844a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80")'}}>
+                                      <style dangerouslySetInnerHTML={{__html: "\n\n  .bg-img{\n    background-image:url('https://ik.imagekit.io/vpa3fwqdnd/Backgrounds/blob-scatter-haikei_mdOxzc5lE.svg');\n    \n  }\n  .shadow-g:hover{\n    \n  box-shadow:5px 5px 50px 5px pink;\n\n  }\n\n\n  " }} />
+        <header className="text-gray-400 font-bold body-font bg-black">
+          <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a href="#_" className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+              <span className="ml-3 text-2xl text-pink-500">.uicomp</span>
+            </a>
+            <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-lg justify-center">
+              <a href="#_" className="mr-10 hover:text-gray-300">Categories</a>
+              <a href="#_" className="mr-10 hover:text-gray-300">Services</a>
+              <a href="#_" className="mr-10 hover:text-gray-300">Terms</a>
+            </nav>
+            <button className="text-white inline-flex items-center  px-8 py-4 text-base font-bold leading-6 bg-pink-700 shadow-g border border-transparent md:w-auto hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-700 rounded-full">Try it for free
+            </button>
+          </div>
+        </header>
+        <section className="w-full px-6 antialiased bg-black text-gray-400">
           <div className="mx-auto max-w-7xl">
-            <div className="container py-32 mx-auto text-center sm:px-4">
-              <h1 className="text-4xl leading-10 tracking-tight text-white sm:text-5xl sm:leading-none md:text-6xl xl:text-6xl">
-                <span className="block">Convert your Unstructured Data</span>
-                <span className="relative inline-block mt-3 text-green-400">
-                  Easy Solution to Develop API
+            <div className="container max-w-lg px-4 py-32 mx-auto text-left md:max-w-none md:text-center">
+              <h1 className="text-4xl font-extrabold leading-10 tracking-tight text-left text-white md:text-center sm:leading-none md:text-6xl lg:text-7xl">
+                <span className="inline md:block">
+                  Lorem Ipsum is simply
+                </span>
+                <span className="relative mt-2 mb-2 text-pink-500 md:inline-block">
+                  dummy text of the printing
                 </span>
               </h1>
-              <div className="max-w-lg mx-auto mt-6 text-sm text-center text-gray-300 md:mt-12 sm:text-base md:max-w-xl md:text-lg xl:text-xl">Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing</div>
-              <div className="relative flex items-center max-w-md mx-auto mt-12 overflow-hidden text-center rounded-full">
-                <input type="text" name="email" placeholder="Email Address" className="w-full h-12 px-6 py-2 font-medium text-white focus:outline-none bg-gray-900" /> <span className="relative top-0 right-0 block">
-                  <button type="button" className="inline-flex items-center w-32 h-12 px-8 text-base leading-6 text-black transition duration-150 ease-in-out bg-green-400 border border-transparent hover:bg-green-500 focus:outline-none active:bg-green-500">
-                    SIGNUP
-                  </button>
+              <div className="mx-auto mt-5 md:mt-12 md:max-w-2xl md:text-center lg:text-2xl">Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing</div>
+              <div className="flex flex-col items-center mt-12 text-center"> <span className="relative inline-flex w-full md:w-auto">
+                  <a href="#_" type="button" className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white bg-pink-700 shadow-g border border-transparent md:w-auto hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-700 rounded-full">
+                    Purchase Now
+                  </a>
                 </span>
               </div>
             </div>
           </div>
         </section>
-        <section className="text-gray-800 body-font bg-white font-bold">
-          <div className="container px-5 py-20 sm:px-12 mx-auto">
-            <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-              <h1 className="sm:text-xl text-lg title-font mb-2 text-green-400">
-                Tools
-              </h1>
-              <h1 className="sm:text-3xl text-2xl title-font mb-2 text-gray-900">
-                Usecases and Industries
-              </h1>
-              <p className="lg:w-1/2 w-full leading-relaxed">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
+        <section className="text-gray-100 body-font font-bold bg-black">
+          <div className="container mx-auto flex px-5 pb-24 items-center justify-center flex-col">
+            <div className="lg:w-5/6 mx-auto mb-6">
+              <div className="rounded-lg h-64 overflow-hidden sm:h-screen">
+                <img alt="content" className="object-conver object-center h-full w-full" src="https://images.unsplash.com/photo-1621109493291-ec75b9930231?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" />
+              </div>
             </div>
-            <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-              <div className="p-4 md:w-1/4 sm:mb-0 mb-6">
-                <div className="rounded shadow-xl mb-6 h-64 overflow-hidden">
-                  <img alt="content" className="object-cover object-center h-full w-full" src="https://images.unsplash.com/photo-1579783483458-83d02161294e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=428&q=80" />
-                </div>
-                <h2 className="text-2xl title-font text-green-800 mt-5">
-                  Agriculture
-                </h2>
-                <p className="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p> <a href="#_" className="text-green-800 inline-flex items-center mt-3">
-                  Learn More
-                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
-              <div className="p-4 md:w-1/4 sm:mb-0 mb-6">
-                <div className="rounded shadow-xl mb-6 h-64 overflow-hidden">
-                  <img alt="content" className="object-cover object-center h-full w-full" src="https://source.unsplash.com//random/profile" />
-                </div>
-                <h2 className="text-2xl title-font text-green-800 mt-5">
-                  Medicine
-                </h2>
-                <p className="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p> <a href="#_" className="text-green-800 inline-flex items-center mt-3">
-                  Learn More
-                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
-              <div className="p-4 md:w-1/4 sm:mb-0 mb-6">
-                <div className="rounded shadow-xl mb-6 h-64 overflow-hidden">
-                  <img alt="content" className="object-cover object-center h-full w-full" src="https://source.unsplash.com/random/office" />
-                </div>
-                <h2 className="text-2xl title-font text-green-800 mt-5">
-                  Engineering
-                </h2>
-                <p className="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p> <a href="#_" className="text-green-800 inline-flex items-center mt-3">
-                  Learn More
-                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
-              <div className="p-4 md:w-1/4 sm:mb-0 mb-6">
-                <div className="rounded shadow-xl mb-6 h-64 overflow-hidden">
-                  <img alt="content" className="object-cover object-center h-full w-full" src="https://source.unsplash.com/random/nature" />
-                </div>
-                <h2 className="text-2xl title-font font-bold text-green-800 mt-5">
-                  Education
-                </h2>
-                <p className="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p> <a href="#_" className="text-green-800 inline-flex items-center mt-3">
-                  Learn More
-                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
+            <div className="text-center lg:w-2/3 w-full">
+              <div className="flex justify-center">
+                <button className="inline-flex shadow-g text-gray-100 bg-pink-700 border-0 py-3 px-8 focus:outline-none hover:bg-pink-600 rounded-full text-lg">See Demo</button>
               </div>
             </div>
           </div>
         </section>
-        <section className="bg-gradient-to-r from-green-800 to-green-900 font-mont">
-          <div className="container px-6 py-16 mx-auto">
-            <div className="items-center md:flex">
-              <div className="w-full md:w-1/2">
-                <div className="max-w-lg">
-                  <div className="max-w-6xl px-5 mx-auto space-y-6">
-                    <h1 className="tracking-tight leading-10 text-left text-white text-4xl md:text-4xl">
-                      <span className="block">
-                        Design API 
-                        <span className="block mt-1 text-gray-100 lg:inline lg:mt-0 border-b-2 border-yellow-200">
-                          Simple JSON
-                        </span>
-                      </span>
-                    </h1>
-                    <p className="w-full mx-auto text-base text-left text-white md:max-w-md sm:text-lg lg:text-2xl md:max-w-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <div className="relative flex flex-col md:flex-row md:space-x-4"> <a href="#_" className="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-green-500 md:mb-0 hover:bg-green-600 md:w-auto rounded-full">
-                        Try It Free
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                          <line x1={5} y1={12} x2={19} y2={12} />
-                          <polyline points="12 5 19 12 12 19" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center w-full mt-6 md:mt-0 md:w-1/2">
-                <img className="w-full h-full max-w-2xl shadow-2xl rounded" src="https://source.unsplash.com/collection/190727/620x360/" alt="" />
-              </div>
+        <section className="text-gray-400 body-font bg-black">
+          <div className="container px-5 py-12 mx-auto">
+            <div className="flex flex-wrap w-full mb-10 flex-col p-4 sm:p-10">
+              <h1 className="sm:text-5xl text-3xl title-font mb-2 text-white">Discover + create unlimited 
+                <span className="relative mt-2 mb-2 text-pink-500 md:inline-block">
+                  dummy text of the printing
+                </span></h1>
             </div>
-          </div>
-        </section>
-        <section className="text-gray-800 body-font font-bold font-mont bg-white">
-          <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-            <img className="lg:w-5/6 mb-10 h-64 object-cover object-center" alt="hero" src="https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" />
-            <div className="lg:w-5/6 w-full">
-              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">
-                We feel happy everytime you contact us.
-              </h1>
-              <div className="flex flex-wrap -m-2">
-                <div className="p-2 w-1/2">
-                  <div className="relative">
-                    <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
-                    <input type="text" id="name" name="name" className="w-full bg-gray-100 bg-opacity-50 text-base outline-none text-gray-700 py-1 px-3 leading-8 border-b" />
+            <div className="flex flex-wrap">
+              <div className=" md:w-1/2 sm:p-4 items-center justify-center">
+                <div className="p-4">
+                  <div className="w-20 h-20 inline-flex items-center justify-center rounded-xl shadow-xl bg-white bg-opacity-10 text-pink-400 mb-4">
+                    <svg className="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z" /></svg>
                   </div>
+                  <h2 className="text-3xl text-white title-font mb-4 mt-4">Lorem Ipsum</h2>
+                  <p className="leading-relaxed text-xl tracking-tight">Nam  hendrerit tortor. Aenean a nunc eget lectus posuere interdum. Donec non dui ultrices, accumsan mi at, scelerisque lorem. Fusce imperdiet libero sed mollis malesuada.</p>
                 </div>
-                <div className="p-2 w-1/2">
-                  <div className="relative">
-                    <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
-                    <input type="email" id="email" name="email" className="w-full bg-gray-100 bg-opacity-50 text-base outline-none text-gray-700 py-1 px-3 leading-8 border-b" />
+              </div>
+              <div className=" md:w-1/2 sm:p-4 items-center justify-center">
+                <div className="p-4">
+                  <div className="w-20 h-20 inline-flex items-center justify-center rounded-xl shadow-xl bg-white bg-opacity-10 text-pink-400 mb-4">
+                    <svg className="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" /></svg>
                   </div>
+                  <h2 className="text-3xl text-white title-font mb-4 mt-4">Lorem Ipsum</h2>
+                  <p className="leading-relaxed text-xl tracking-tight">Nam  hendrerit tortor. Aenean a nunc eget lectus posuere interdum. Donec non dui ultrices, accumsan mi at, scelerisque lorem. Fusce imperdiet libero sed mollis malesuada.</p>
                 </div>
-                <div className="p-2 w-full">
-                  <div className="relative">
-                    <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
-                    <textarea id="message" name="message" className="w-full bg-gray-100 bg-opacity-50 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 border-b" defaultValue={""} />
+              </div>
+              <div className=" md:w-1/2 sm:p-4 items-center justify-center">
+                <div className="p-4">
+                  <div className="w-20 h-20 inline-flex items-center justify-center rounded-xl shadow-xl bg-white bg-opacity-10 text-pink-400 mb-4">
+                    <svg className="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> 
                   </div>
+                  <h2 className="text-3xl text-white title-font mb-4 mt-4">Lorem Ipsum</h2>
+                  <p className="leading-relaxed text-xl tracking-tight">Nam  hendrerit tortor. Aenean a nunc eget lectus posuere interdum. Donec non dui ultrices, accumsan mi at, scelerisque lorem. Fusce imperdiet libero sed mollis malesuada.</p>
                 </div>
-                <div className="p-2 w-full">
-                  <button className="text-white bg-green-400 border-0 py-2 px-8 focus:outline-none hover:bg-green-500 text-lg rounded-full">Send Message</button>
+              </div>
+              <div className=" md:w-1/2 sm:p-4 items-center justify-center">
+                <div className="p-4">
+                  <div className="w-20 h-20 inline-flex items-center justify-center rounded-xl shadow-xl bg-white bg-opacity-10 text-pink-400 mb-4">
+                    <svg className="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg> 
+                  </div>
+                  <h2 className="text-3xl text-white title-font mb-4 mt-4">Lorem Ipsum</h2>
+                  <p className="leading-relaxed text-xl tracking-tight">Nam  hendrerit tortor. Aenean a nunc eget lectus posuere interdum. Donec non dui ultrices, accumsan mi at, scelerisque lorem. Fusce imperdiet libero sed mollis malesuada.</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <footer className="bg-black bg-opacity-90 body-font font-mont">
-          <div className="container px-5 pt-12 mx-auto flex md:items-center md:flex-row md:flex-nowrap flex-wrap flex-col">
-            <div className="flex-grow flex flex-wrap md:text-left text-center">
-              <div className="lg:w-1/4 w-full px-4">
-                <h2 className="text-green-400 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                <nav className="list-none mb-10">
-                  <li>
-                    <a href="#_" className="text-white">First Link</a>
-                  </li>
-                  <li>
-                    <a href="#_" className="text-white">Second Link</a>
-                  </li>
-                  <li>
-                    <a href="#_" className="text-white">Third Link</a>
-                  </li>
-                  <li>
-                    <a href="#_" className="text-white">Fourth Link</a>
-                  </li>
-                </nav>
+        <section className="text-gray-400 body-font bg-img">
+          <div className="container px-5 py-12 mx-auto">
+            <div className="flex flex-wrap w-full mb-10 flex-col p-4 sm:p-10">
+              <h1 className="sm:text-5xl text-3xl title-font mb-2 text-white">Disvcover the new things
+                <span className="relative mt-2 mb-2 text-pink-500 md:inline-block">
+                  See our stats and select a service
+                </span></h1>
+            </div>
+            <div className="flex flex-wrap -m-4 text-center">
+              <div className="p-4 sm:w-1/4 w-1/2">
+                <h2 className="title-font font-bold sm:text-6xl text-3xl text-pink-700">2.7K+</h2>
+                <p className="leading-relaxed sm:text-2xl text-lg">Users</p>
               </div>
-              <div className="lg:w-1/4 w-full px-4">
-                <h2 className="text-green-400 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                <nav className="list-none mb-10">
-                  <li>
-                    <a href="#_" className="text-white">First Link</a>
-                  </li>
-                  <li>
-                    <a href="#_" className="text-white">Second Link</a>
-                  </li>
-                  <li>
-                    <a href="#_" className="text-white">Third Link</a>
-                  </li>
-                  <li>
-                    <a href="#_" className="text-white">Fourth Link</a>
-                  </li>
-                </nav>
+              <div className="p-4 sm:w-1/4 w-1/2">
+                <h2 className="title-font font-bold sm:text-6xl text-3xl text-red-500">1.8K+</h2>
+                <p className="leading-relaxed sm:text-2xl text-lg">Subscribes</p>
               </div>
-              <div className="lg:w-1/4 w-full px-4">
-                <h2 className="text-green-400 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                <nav className="list-none mb-10">
-                  <li>
-                    <a href="#_" className="text-white">First Link</a>
-                  </li>
-                  <li>
-                    <a href="#_" className="text-white">Second Link</a>
-                  </li>
-                  <li>
-                    <a href="#_" className="text-white">Third Link</a>
-                  </li>
-                  <li>
-                    <a href="#_" className="text-white">Fourth Link</a>
-                  </li>
-                </nav>
+              <div className="p-4 sm:w-1/4 w-1/2">
+                <h2 className="title-font font-bold sm:text-6xl text-3xl text-yellow-500">35+</h2>
+                <p className="leading-relaxed sm:text-2xl text-lg">Downloads</p>
               </div>
-              <div className="lg:w-1/4 w-full px-4">
-                <h2 className="text-green-400 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                <nav className="list-none mb-10">
-                  <li>
-                    <a href="#_" className="text-white">First Link</a>
-                  </li>
-                  <li>
-                    <a href="#_" className="text-white">Second Link</a>
-                  </li>
-                  <li>
-                    <a href="#_" className="text-white">Third Link</a>
-                  </li>
-                  <li>
-                    <a href="#_" className="text-white">Fourth Link</a>
-                  </li>
-                </nav>
+              <div className="p-4 sm:w-1/4 w-1/2">
+                <h2 className="title-font font-bold sm:text-6xl text-3xl text-pink-500">4+</h2>
+                <p className="leading-relaxed sm:text-2xl text-lg">Products</p>
               </div>
             </div>
           </div>
-          <div className="container mx-auto px-4 py-4 flex flex-wrap flex-col sm:flex-row justify-center text-center bg-green-900">
-            <p className="text-gray-400 text-sm text-center">© 2021-2022 
-              <a href="#_" rel="noopener noreferrer" className="text-gray-100 ml-1" target="_blank">All rights reserved.</a>
-            </p>
+        </section>
+        <section className="text-gray-400 body-font bg-black">
+          <div className="container px-5 pt-24 mx-auto flex flex-wrap flex-col">
+            <div className="flex mx-auto flex-wrap">
+              <a href="#_" className="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start  title-font font-medium bg-white bg-opacity-10 inline-flex items-center leading-none  text-pink-400 ounded-t">
+                For designers
+              </a>
+              <a href="#_" className="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start  title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-200 ">
+                For startups
+              </a>
+              <a href="#_" className="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start  title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-200">
+                For Freelancers
+              </a>
+            </div>
           </div>
-        </footer>
+        </section>
+        <section className="text-gray-400 body-font bg-black bg-opacity-90">
+          <div className="container flex flex-col items-center px-5 py-16 mx-auto md:flex-row lg:px-14">
+            <div className="flex flex-col items-start w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 xl:mr-20 md:pr-24 md:mb-0">
+              <h1 className="mb-8 text-3xl  tracking-tighter text-left text-white sm:text-4xl title-font">
+                Lorem Ipsum is simply dummy text of the printing.
+              </h1>
+              <p className="mb-8 text-xl leading-relaxed text-left tracking-tight">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <p className="flex items-center mb-6 hover:opacity-80 text-white"> <span className="inline-flex items-center justify-center flex-shrink-0 w-6 h-6  bg-pink-400 mr-2 rounded-full">
+                  <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24}>
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" />
+                  </svg>
+                </span>
+                Lorem Ipsum is simply dummy text of the printing</p>
+              <p className="flex items-center mb-6 hover:opacity-80"> <span className="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 bg-pink-400 rounded-full">
+                  <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24}>
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" />
+                  </svg>
+                </span>
+                Lorem Ipsum is simply dummy text of the printing</p>
+              <p className="flex items-center mb-6 hover:opacity-80"> <span className="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full bg-pink-400">
+                  <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24}>
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" />
+                  </svg>
+                </span>
+                Lorem Ipsum is simply dummy text of the printing</p>
+            </div>
+            <div className="w-full lg:w-5/6 lg:max-w-lg md:w-1/2">
+              <img className="object-cover object-center rounded-lg" alt="hero" src="https://ik.imagekit.io/vpa3fwqdnd/Components/contact_n8VSUzNXy.svg" />
+            </div>
+          </div>
+        </section>
+        <section className="text-gray-400 body-font overflow-hidden bg-black">
+          <div className="container px-5 py-24 mx-auto max-w-3xl">
+            <div className="flex flex-col text-center w-full mb-10">
+              <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-white">Pricing</h1>
+            </div>
+            <div className="flex flex-wrap -m-4">
+              <div className="p-4 md:w-1/2 w-full">
+                <div className="h-full p-6 flex flex-col relative overflow-hidden hover:shadow-xl hover:bg-white hover:bg-opacity-20  rounded transition transform hover:translate-y-4 ease-linear duration-300">
+                  <h2 className="text-sm tracking-widest title-font mb-1 font-bold text-pink-400">Small</h2>
+                  <h1 className="text-3xl text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                    Free
+                  </h1>
+                  <p className="flex items-center  mb-2">
+                    <span className="w-8 h-8 mr-2 inline-flex items-center justify-center bg-pink-600 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" strokelinecap="round" strokelinejoin="round" strokewidth="2.5" className="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5" />
+                      </svg>
+                    </span>Vexillologist pitchfork
+                  </p>
+                  <p className="flex items-center  mb-2">
+                    <span className="w-8 h-8 mr-2 inline-flex items-center justify-center bg-pink-600 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" strokelinecap="round" strokelinejoin="round" strokewidth="2.5" className="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5" />
+                      </svg>
+                    </span>Tumeric plaid portland
+                  </p>
+                  <p className="flex items-center  mb-2">
+                    <span className="w-8 h-8 mr-2 inline-flex items-center justify-center bg-pink-600 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" strokelinecap="round" strokelinejoin="round" strokewidth="2.5" className="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5" />
+                      </svg>
+                    </span>Hexagon neutra unicorn
+                  </p>
+                  <p className="flex items-center  mb-2">
+                    <span className="w-8 h-8 mr-2 inline-flex items-center justify-center bg-pink-600 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" strokelinecap="round" strokelinejoin="round" strokewidth="2.5" className="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5" />
+                      </svg>
+                    </span>Vexillologist pitchfork
+                  </p>
+                  <p className="flex items-center  mb-6">
+                    <span className="w-8 h-8 mr-2 inline-flex items-center justify-center bg-pink-600 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" strokelinecap="round" strokelinejoin="round" strokewidth="2.5" className="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5" />
+                      </svg>
+                    </span>Mixtape chillwave tumeric
+                  </p>
+                </div>
+              </div>
+              <div className="p-4 md:w-1/2 w-full  mx-auto">
+                <div className="h-full mt-4 p-4 bg-white bg-opacity-10 hover:bg-opacity-20 hover:shadow-xl rounded transition transform hover:translate-y-4 ease-linear duration-300 sm:scale-110 flex flex-col relative overflow-hidden">
+                  <h2 className="text-sm tracking-widest title-font mb-1 font-bold text-pink-600">Pro</h2>
+                  <h1 className="text-3xl text-pink-600 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                    <span>$56</span>
+                    <span className="text-lg ml-1 font-normal">/mo</span>
+                  </h1>
+                  <p className="flex items-center  mb-2">
+                    <span className="w-8 h-8 mr-2 inline-flex items-center justify-center bg-pink-600 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" strokelinecap="round" strokelinejoin="round" strokewidth="2.5" className="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5" />
+                      </svg>
+                    </span>Vexillologist pitchfork
+                  </p>
+                  <p className="flex items-center  mb-2">
+                    <span className="w-8 h-8 mr-2 inline-flex items-center justify-center bg-pink-600 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" strokelinecap="round" strokelinejoin="round" strokewidth="2.5" className="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5" />
+                      </svg>
+                    </span>Tumeric plaid portland
+                  </p>
+                  <p className="flex items-center  mb-2">
+                    <span className="w-8 h-8 mr-2 inline-flex items-center justify-center bg-pink-600 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" strokelinecap="round" strokelinejoin="round" strokewidth="2.5" className="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5" />
+                      </svg>
+                    </span>Hexagon neutra unicorn
+                  </p>
+                  <p className="flex items-center  mb-2">
+                    <span className="w-8 h-8 mr-2 inline-flex items-center justify-center bg-pink-600 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" strokelinecap="round" strokelinejoin="round" strokewidth="2.5" className="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5" />
+                      </svg>
+                    </span>Vexillologist pitchfork
+                  </p>
+                  <p className="flex items-center ">
+                    <span className="w-8 h-8 mr-2 inline-flex items-center justify-center bg-pink-600 text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" strokelinecap="round" strokelinejoin="round" strokewidth="2.5" className="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5" />
+                      </svg>
+                    </span>Mixtape chillwave tumeric
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+                
             </div>
         )
     }
