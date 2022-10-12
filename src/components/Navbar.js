@@ -20,7 +20,7 @@ export class Navbar extends Component {
             </a>
             <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-lg justify-center">
               <a href="#_" className="mr-10 hover:text-gray-300">
-                Categories
+                Blogs
               </a>
               <a href="#_" className="mr-10 hover:text-gray-300">
                 Services
